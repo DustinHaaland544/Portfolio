@@ -1,0 +1,18 @@
+Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data and code that manipulate that data.
+
+In object-oriented programming, objects are used to represent real-world entities, such as a person or a bank account.
+
+These objects contain data (called "attributes") and code (called "methods") that operate on that data.
+
+
+One of the key features of object-oriented programming is inheritance, which allows objects to inherit characteristics and behavior from parent objects. 
+
+This allows developers to create a "family tree" of objects, with more specialized objects inheriting characteristics from more general objects.
+
+
+Other key features of object-oriented programming include encapsulation (hiding the implementation details of an object from other objects) and 
+
+polymorphism (allowing objects of different types to be treated the same way).
+
+
+Object-oriented programming is used in many programming languages, including Java, Python, C++, and C#.
