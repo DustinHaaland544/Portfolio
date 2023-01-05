@@ -68,3 +68,32 @@ without affecting the rest of the program.
 
 Polymorphism: Polymorphism is the ability of a subclass to override or extend the methods of its superclass. This allows objects of different classes to respond
 differently to the same method call.
+
+Certainly! Here is an example of an object-oriented program in JavaScript that defines a "Dog" class with attributes for breed and age, and a method for barking:
+
+class Dog {
+  constructor(breed, age) {
+    this.breed = breed;
+    this.age = age;
+  }
+  
+  bark() {
+    console.log('Woof!');
+  }
+}
+
+const myDog = new Dog('Labrador', 3);
+console.log(myDog.breed); // Output: "Labrador"
+console.log(myDog.age); // Output: 3
+myDog.bark(); // Output: "Woof!"
+
+In this example, the Dog class has a constructor function that is used to create new objects with the specified breed and age. It also has a bark() method that outputs
+the string "Woof!" to the console.
+
+To create a new object from the Dog class, we use the new keyword followed by the name of the class and any required arguments for the constructor function. In this
+case, we create a new Dog object called myDog with a breed of "Labrador" and an age of 3.
+
+We can access the attributes of the myDog object using dot notation, as shown in the last two lines of the code. We can also call the bark() method of the myDog object
+using the same dot notation.
+
+I hope this helps to give you an idea of how object-oriented programming works in JavaScript! Let me know if you have any questions.
