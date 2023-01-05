@@ -49,10 +49,6 @@ but the rest of the program would not need to be aware of this change, as long a
 
 I hope this helps to clarify the concepts of object-oriented programming! Let me know if you have any questions.
 
-
-
-
-
 Sure! Here are some key concepts in object-oriented programming (OOP):
 
 Class: A class is a template or blueprint for creating objects. It defines the characteristics (attributes) and actions (methods) that an object can have.
