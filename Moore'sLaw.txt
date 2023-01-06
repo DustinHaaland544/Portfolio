@@ -9,3 +9,5 @@ Moore's Law has had a significant impact on the technology industry, and has hel
 about how long the law will continue to hold true, as there are physical limitations to the size and density of transistors that can be achieved. Some experts believe 
 that Moore's Law may eventually reach its limits, while others believe that new technologies and approaches will be developed to continue the trend of exponential 
 improvement in computing power.
+
+https://youtu.be/CUnQNTwmHHo
