@@ -1,0 +1,22 @@
+Redux middleware is a way to extend the functionality of Redux by allowing you to write code that can interact with actions that are dispatched to the store. 
+This can be useful for a variety of purposes, such as logging, error handling, or modifying the action or the state before it reaches the reducer.
+
+To use middleware, you will need to apply it to your store using the applyMiddleware function from the redux library. 
+Then, when an action is dispatched, the middleware will be given an opportunity to intercept the action, perform some logic, and then pass the action on to the next 
+middleware in the chain, or to the reducer if it is the last middleware in the chain.
+
+Here is an example of a simple middleware that logs all actions as they are dispatched:
+
+const logger = store => next => action => {
+  console.log('dispatching', action)
+  let result = next(action)
+  console.log('next state', store.getState())
+  return result
+}
+
+This middleware can be applied to the store using the applyMiddleware function:
+
+import { createStore, applyMiddleware } from 'redux'
+import rootReducer from './reducers'
+
+const store = createStore(rootReducer, applyMiddleware(logger))
