@@ -1,0 +1,11 @@
+Moore's Law is a prediction made by Gordon Moore, co-founder of Intel, in 1965 that the number of transistors that can be placed on a microprocessor will double 
+approximately every two years, leading to exponential increases in computing power and decreases in cost. This prediction has held true for several decades, and has 
+driven the rapid pace of technological advancement in the field of computing.
+
+The concept of Moore's Law is often used to describe the trend of increasing performance and capabilities of computer hardware over time. It has been a driving force 
+in the development of new technologies and has influenced the way that computer hardware is designed and produced.
+
+Moore's Law has had a significant impact on the technology industry, and has helped to make many advanced technologies and devices possible. However, there is some debate 
+about how long the law will continue to hold true, as there are physical limitations to the size and density of transistors that can be achieved. Some experts believe 
+that Moore's Law may eventually reach its limits, while others believe that new technologies and approaches will be developed to continue the trend of exponential 
+improvement in computing power.
