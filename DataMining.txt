@@ -1,0 +1,17 @@
+Data mining is a process of discovering patterns in large data sets involving methods at the intersection of artificial intelligence, machine learning, statistics, and 
+database systems. It is an interdisciplinary subfield of computer science and statistics with an overall goal to extract information (with intelligent methods) from a 
+data set and transform the information into a comprehensible structure for further use.
+
+Data mining is the process of finding correlations or patterns among dozens of fields in large relational databases. Data mining tools predict behaviors and future 
+trends, allowing businesses to make proactive, knowledge-driven decisions. Data mining tools can answer business questions that traditionally were too time-consuming to 
+resolve. They scour databases for hidden patterns, finding predictive information that experts may miss because it lies outside their expectations.
+
+Some common techniques used in data mining include decision trees, neural networks, support vector machines, and k-means clustering. These techniques can be used to build
+models to make predictions or to identify patterns in data.
+
+Data mining has a number of applications in a variety of industries, including finance, healthcare, and marketing. For example, in the healthcare industry, data mining 
+can be used to identify patterns in patient data that may indicate a need for preventative measures. In the finance industry, data mining can be used to detect 
+fraudulent activity. In the marketing industry, data mining can be used to identify patterns in customer data that may indicate a need for targeted promotions.
+
+Overall, data mining is an important tool for organizations as it allows them to make informed decisions by identifying patterns and trends in data that may not be 
+immediately apparent.
