@@ -1,0 +1,12 @@
+Deep learning is a subfield of machine learning that is inspired by the structure and function of the brain, specifically the neural networks that make up the brain. 
+It involves training artificial neural networks on a large dataset, allowing the network to learn and make intelligent decisions on its own.
+
+Deep learning algorithms use multiple layers of artificial neural networks to learn and make decisions. Each layer processes the input data and passes it on to the next 
+layer, until the final layer produces the output. The layers in between the input and output layers are called hidden layers, and the process of training a deep learning 
+model involves adjusting the weights and biases of the connections between the neurons in these hidden layers.
+
+One of the key benefits of deep learning is its ability to learn from unstructured and unlabeled data, such as images, audio, and text. This is in contrast to traditional
+machine learning algorithms, which typically require the data to be manually labeled and structured in a specific way.
+
+Deep learning has been successful in a wide range of applications, including image and speech recognition, natural language processing, and even playing games like chess 
+and Go. It has also been used to make significant progress in fields such as healthcare, finance, and transportation.
