@@ -7,7 +7,7 @@ successful in applications such as image and speech recognition, and has also be
 transportation.
 
 Machine learning, on the other hand, is a broader field that encompasses a variety of algorithms and techniques for learning from data. It includes techniques such as 
-supervised learning, unsupervised learning, semi-supervised learning, and reinforcement learning. Machine learning algorithms do not have to be based on neural networks, 
+supervised learning, unsupervised learning, semi-supervised learning, and reinforcement learning. Machine learning algorithms do not need to be based on neural networks, 
 and can be applied to a wide range of problems.
 
 Natural language processing (NLP) is a subfield of artificial intelligence that focuses on the interaction between computers and humans through natural language. It 
