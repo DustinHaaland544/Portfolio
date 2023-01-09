@@ -10,3 +10,5 @@ machine learning algorithms, which typically require the data to be manually lab
 
 Deep learning has been successful in a wide range of applications, including image and speech recognition, natural language processing, and even playing games like chess 
 and Go. It has also been used to make significant progress in fields such as healthcare, finance, and transportation.
+
+www.udemy.com/course/deeplearning_x
