@@ -32,3 +32,79 @@ Keep in mind that, Hooks are not just for adding state. They can also help you o
 available for Class components.
 
 It's worth noting that, as you use more hooks in your codebase, it's good idea to think about how your state is managed and to follow best practices and conventions.
+
+
+import React, { useState, useEffect, useContext, useRef, useReducer } from 'react';
+
+const MyContext = React.createContext();
+
+function App() {
+  const [count, setCount] = useState(0);
+  const [value, setValue] = useState('initial value');
+  const contextValue = useContext(MyContext);
+  const inputRef = useRef(null);
+
+  const [state, dispatch] = useReducer(
+    (state, action) => {
+      switch (action.type) {
+        case 'increment':
+          return { ...state, count: state.count + 1 };
+        case 'decrement':
+          return { ...state, count: state.count - 1 };
+        case 'reset':
+          return { count: 0 };
+        default:
+          throw new Error();
+      }
+    },
+    { count: 0 }
+  );
+
+  useEffect(() => {
+    console.log('Component mounted or updated.');
+    return () => console.log('Component will unmount.');
+  }, [count]);
+
+  useEffect(() => {
+    console.log('Component mounted or updated.');
+    return () => console.log('Component will unmount.');
+  });
+
+  function handleClick() {
+    inputRef.current.focus();
+  }
+
+  return (
+    <MyContext.Provider value={contextValue}>
+      <h1>Count: {count}</h1>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
+      <button onClick={() => dispatch({ type: 'increment' })}>Increment (reducer)</button>
+      <button onClick={() => dispatch({ type: 'decrement' })}>Decrement (reducer)</button>
+      <button onClick={() => dispatch({ type: 'reset' })}>Reset (reducer)</button>
+      <input
+        ref={inputRef}
+        type="text"
+        value={value}
+        onChange={e => setValue(e.target.value)}
+      />
+      <button onClick={handleClick}>Focus input</button>
+    </MyContext.Provider>
+  );
+}
+
+export default App;
+
+This example demonstrates:
+
+useState hook: In this example, it's been used to manage the count and value state and passed as an argument to setCount and setValue functions to update the states.
+
+useEffect hook: This hook is used twice in the program. One takes the count state as a dependency and the other doesn't take any dependency. So, the first effect will
+fire only when count changes, the second effect will fire everytime the component re-renders.
+
+useContext hook: It's used to access the value of the MyContext.
+
+useRef hook: It's used to create a reference to the input field. When the button is clicked, the focus function is called on the input field, which sets the focus on
+the input field.
+
+useReducer hook: this hook
