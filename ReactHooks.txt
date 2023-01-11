@@ -1,0 +1,34 @@
+React Hooks are functions that allow you to use state and other React features in functional components. Prior to the introduction of Hooks, the only way to use state and
+other React features in a component was to convert it to a class component.
+
+Hooks are JavaScript functions, but they start with the word "use" and let you "hook into" React features. For example, the useState hook allows you to add state to a 
+functional component, while the useEffect hook allows you to add component lifecycle methods like componentDidMount to a functional component.
+
+Here are some of the basic Hooks in React:
+
+useState: Allows you to add state to a functional component. It returns an array with two items: the current state, and a function to update it.
+
+useEffect: Allows you to run side effects (such as fetching data or setting up a subscription) in a functional component. It takes a function as an argument, which will
+run after the component has rendered. It can also take a second argument, which is an array of dependencies that tells React when to re-run the effect.
+
+useContext: Allows you to access the React context in a functional component.
+
+useRef: Allows you to access the underlying DOM element in a functional component.
+
+useReducer: Allows you to add a reducer to a functional component, similar to how you would use the reducer in a class component.
+
+useMemo: allows you to optimize the performance of a component by memorizing the result of a function. This can be used to avoid re-rendering a component when not 
+necessary
+
+useCallback: Similar to useMemo, but instead of memorizing the result of a function, it memorizes the function itself.
+
+useImperativeHandle: allows you to customize the object that is exposed to parent components when using the forwardRef HOC.
+
+useMutationEffect: Like useEffect but it fire synchronously after a render and before the browser has painted.
+
+useLayoutEffect: Similar to useEffect, but the effect is fired synchronously after the browser has painted.
+
+Keep in mind that, Hooks are not just for adding state. They can also help you organize and share component logic, and make it easier to test your components. They not
+available for Class components.
+
+It's worth noting that, as you use more hooks in your codebase, it's good idea to think about how your state is managed and to follow best practices and conventions.
