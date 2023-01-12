@@ -1,0 +1,61 @@
+Kubernetes was originally developed by Google. The project was started by Google engineers Joe Beda, Brendan Burns, and Craig McLuckie in 2014, and it was later donated 
+to the Cloud Native Computing Foundation (CNCF) in 2015. Since then, it has been developed and maintained as an open-source project by a large and active community of 
+contributors from a variety of organizations, including Google, Red Hat, Microsoft, and many others.
+
+Kubernetes is an open-source platform for managing containerized workloads and services that was originally developed by Google. It provides a way to automate the 
+deployment, scaling, and management of containerized applications, making it easier to run and maintain distributed systems in a cloud-native environment.
+
+Kubernetes follows a master-slave architecture, where the master node is responsible for managing the entire cluster, and the slave nodes, called worker nodes, run the 
+containerized workloads. The master node provides an API for interacting with the cluster, which can be used to create, update, and delete resources.
+
+Kubernetes provides a number of core abstractions for representing containerized workloads, including:
+
+Pods: the smallest and simplest unit in the Kubernetes object model, which represents a single container or a group of closely related containers.
+Services: provide a stable endpoint for accessing pods, allowing traffic to be load-balanced among multiple replicas of a pod.
+Replication Controllers: ensure that a specified number of replicas of a pod are running at all times, and can be used to perform rolling updates and rollbacks.
+Deployments: provide higher-level abstractions for managing replication controllers and pods, and can be used to perform complex rolling updates and rollbacks.
+Kubernetes also provides several additional features to further improve the management and orchestration of containerized workloads.
+
+Volumes: provides a way to store persistent data inside the pod.
+ConfigMaps and Secrets: provide a way to manage configuration data and secrets separately from the pods.
+Namespaces: provide a way to partition cluster resources, which is useful for multi-tenancy scenarios.
+Kubernetes API : which can be used for automation of scaling , automatic failover of nodes and a lot of other things.
+Kubernetes can be installed and run on various cloud providers such as AWS, GCP, Azure and even on-premises. With its powerful orchestration capabilities, 
+Kubernetes has become one of the most popular platforms for deploying and managing containerized workloads in production environments.
+
+In summary, Kubernetes is a powerful open-source platform that provides a comprehensive set of features for automating the deployment, scaling, and management of 
+containerized workloads and services, making it easier to run and maintain distributed systems in a cloud-native environment.
+
+
+Docker was initially developed by Solomon Hykes while working at dotCloud, a platform-as-a-service company. The company started developing Docker as an internal project 
+in 2010, and it was released as open source in March 2013. After that, the company rebranded itself as Docker Inc. and continued to develop and promote the technology. 
+In 2017, Docker Inc was acquired by Mirantis, a company that provides Open Cloud infrastructure solutions, but the Docker platform and ecosystem is still widely used and 
+developed by a large community of contributors.
+
+Docker is a platform and a set of tools for building, shipping, and running containerized applications. Containers are a lightweight form of virtualization that allow 
+developers to package an application and its dependencies together in a single container image, which can be easily run on any infrastructure that supports the Docker 
+runtime.
+
+Docker provides a set of command-line tools for working with containers, including the ability to build, ship, and run containers, as well as to manage and inspect 
+container images and networks. These tools use a RESTful API to communicate with the Docker daemon, which is responsible for managing the low-level details of 
+container execution.
+
+The main component of Docker is the Docker daemon, which is responsible for managing the low-level details of container execution, including creating and managing 
+container namespaces, cgroups, and storage.
+
+Docker daemon communicates with other components through a RESTful API.
+
+Docker also provides a central hub for sharing container images, called the Docker Hub, which allows developers to easily share and discover container images. 
+The hub can be used to store both public and private images, and it provides various features for managing and automating the build and deployment of container images.
+
+Docker images are the building blocks of containerized applications and are created from a set of instructions called a Dockerfile. Each instruction in the Dockerfile 
+specifies a command that will be executed during the image build process. Some examples of the instructions are FROM which specify the base image, RUN which allows 
+execute command, ENV to set environment variables, EXPOSE to expose ports.
+
+Docker allows you to package your applications with all of its dependencies, this makes it very easy to move your application around different environments 
+(e.g. development, test, staging, production) without facing any compatibility issues. Docker containers are also lightweight, making them faster to start and stop, 
+and they use less resources than traditional virtual machines.
+
+In summary, Docker is a platform and set of tools for building, shipping and running containerized applications and services, it provides simple and efficient ways for
+developers to create, deploy and run their applications in any infrastructure. The main component is Docker daemon, which communicates with other components through 
+RESTful API and manage the low-level details of container execution. It also provides Docker Hub, which can be used to share and discover container images.
