@@ -5,3 +5,5 @@ Web Scraping: https://youtu.be/QhD015WUMxE
 Web Scraping: https://youtu.be/XVv6mJpFOb0
 
 Python Data Camp: https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-1-python-basics?ex=1 [nasifshah544@gmail.com]
+
+Full Course: https://youtu.be/XKHEtdqhLK8 
