@@ -59,3 +59,20 @@ and they use less resources than traditional virtual machines.
 In summary, Docker is a platform and set of tools for building, shipping and running containerized applications and services, it provides simple and efficient ways for
 developers to create, deploy and run their applications in any infrastructure. The main component is Docker daemon, which communicates with other components through 
 RESTful API and manage the low-level details of container execution. It also provides Docker Hub, which can be used to share and discover container images.
+
+
+Docker and Kubernetes are both tools that are used to manage and deploy applications in a containerized environment.
+
+Docker is a platform that allows developers to easily create, deploy, and run applications in containers. Containers are a lightweight form of virtualization that
+allows developers to package an application and its dependencies into a single, portable container. This makes it easy to move an application between different
+environments and ensures that it runs consistently across different systems.
+
+Kubernetes, on the other hand, is an open-source platform that is used to manage and orchestrate containerized applications. It is designed to automate the deployment,
+scaling, and management of containerized applications. It can be used to manage and schedule containers that are running on a cluster of machines. Kubernetes provides
+a set of APIs that can be used to automate the deployment and scaling of containerized applications.
+
+In simple terms, Docker is a tool that helps to package and run applications in containers, while Kubernetes is a tool that helps to manage and orchestrate those
+containers once they are running.
+
+Docker is great for development and testing, but when it comes to production, running and managing multiple containers, multiple hosts and multiple networks,
+Kubernetes offers more robust options for scaling, self-healing and automatic rollouts and rollbacks.
