@@ -44,7 +44,6 @@ online exchanges, and can be used to purchase goods and services, or can be held
 it's important to be aware of the risks involved.
 
 
-
 Bitcoin is a decentralized digital currency that uses cryptography for security. It is the first and most well-known cryptocurrency, and operates independently of a
 central bank or government.
 
