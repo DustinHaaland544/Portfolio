@@ -33,6 +33,10 @@ Found a way:
 22. Refresh the Window. 
 23. Click on one of the newbie channels on the left-side bar
 24. On the field below generate any image by typing "/imagine"
-25. Enter whatever image you want to generate.
+25. Enter whatever image you want to generate. 
 26. Press Enter
-27. Enjoy
+27. Click on "Accept Tos" red button.
+28. On the field below generate any image by typing "/imagine" again. 
+29. Enter whatever image you want to generate again.
+30. Press Enter again. 
+31. Enjoy
