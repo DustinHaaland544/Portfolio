@@ -6,3 +6,33 @@ https://smailpro.com/advanced [5]
 
 Line 2 and 5 did not work at my personal pc maybe because it has discord integrated in lot of apps. So removing them completely was not possible. When you buy a new
 laptop, do not install discord at all and try line 2 and 5. 
+
+Found a way:
+
+1. Open Chrome in incognito mode [Ctrl + Shift + N].
+2. Go to "midjourney.com".
+3. Click "Join the Beta" button.
+4. At the new window that opened set an username.
+5. Click "Join"
+6. Select the images asked in the Capthcha. 
+7. Set your Date of Birth
+8. Open "https://smailpro.com/advanced" link in a new incognito window.
+9. Refresh the window. 
+10. Click on the dropdown of the field.
+11. Select an email username.
+12. Click create. 
+13. Click on the email generated below the field to copy it. 
+14. Paste the email at the discord window. 
+15. Set a password.
+16. Click "Claim Account". 
+17. Go back to the smailpro page
+18. Click on the Refresh button below the field to receive the email.
+19. Click on the email.
+20. Click on the "Verify" button in the email. 
+21. Go back to the Discord page.
+22. Refresh the Window. 
+23. Click on one of the newbie channels on the left-side bar
+24. On the field below generate any image by typing "/imagine"
+25. Enter whatever image you want to generate.
+26. Press Enter
+27. Enjoy
