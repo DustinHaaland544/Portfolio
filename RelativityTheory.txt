@@ -1,0 +1,24 @@
+Albert Einstein's Theory of Relativity is a set of two interconnected theories: Special Relativity and General Relativity. These theories describe the way the universe 
+works at a fundamental level, particularly in terms of how space, time, and gravity behave.
+
+Special Relativity
+Special Relativity is based on two postulates:
+
+The laws of physics are the same for all non-accelerating observers, regardless of their relative motion.
+The speed of light is constant for all observers, regardless of their relative motion.
+From these postulates, Einstein was able to derive several counterintuitive but scientifically proven conclusions:
+
+Time dilation: Time appears to move slower for an observer in motion relative to a stationary observer.
+Length contraction: Objects appear shorter in the direction of motion.
+Mass-energy equivalence: Energy and mass are interchangeable through Einstein's famous equation, E=mc², where E is energy, m is mass, and c is the speed of light.
+General Relativity
+General Relativity expands on the principles of Special Relativity by including the effects of gravity. According to General Relativity:
+
+Gravity is not a force, but a curvature of space-time caused by the presence of mass and energy.
+Objects in free-fall follow the straightest possible path through space-time, which is curved by the presence of massive objects.
+The curvature of space-time affects the passage of time, causing time to move slower near massive objects.
+These ideas have been confirmed through a variety of experiments, observations, and technological applications. For example, GPS satellites have to correct for both the 
+time dilation and the curvature of space-time in order to maintain their accuracy.
+
+In summary, Einstein's Theory of Relativity explains how the universe behaves at a fundamental level. It describes how time, space, and gravity interact and how they 
+affect the behavior of objects and energy.
