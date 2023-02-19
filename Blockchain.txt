@@ -98,7 +98,8 @@ structure, they tell everyone else in the group. Then, everyone else checks to m
 the big list.
 
 But here's the cool part: once a block is added to the big list, it can't be changed or removed. It's like the block is locked in place forever. So, if somebody tries
-to cheat by saying they own a block that they really don't, everyone else in the group can see that the block doesn't fit in the big list, and they'll know that person is lying.
+to cheat by saying they own a block that they really don't, everyone else in the group can see that the block doesn't fit in the big list, and they'll know that person
+is lying.
 
 That's basically how blockchain works. It's like a big list of blocks, and everyone in the group works together to make sure the list is accurate and nobody cheats.
 And once something is added to the list, it can't be changed or removed, so everyone knows it's true.
