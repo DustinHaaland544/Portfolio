@@ -1,0 +1,15 @@
+Imagine you have a lot of toys and games, but you don't have enough space to keep all of them in your room. So, your parents came up with an idea to store some of your 
+toys in a big closet or storage room, which is not in your house but in a nearby building.
+
+Cloud computing is a bit like that closet or storage room. Instead of keeping all your important files and programs on your computer, they are stored in a big building 
+with lots of other computers and servers. This big building is called a data center, and it's usually owned by a company that provides cloud computing services.
+
+When you need to use your files or programs, you can access them over the internet from any device, such as a computer, tablet or smartphone, that is connected to the 
+internet. This way, you don't have to carry everything with you all the time, and you can access your things from anywhere in the world, as long as you have an internet 
+connection.
+
+Just like how you can organize your toys and games in the closet, you can also organize your files and programs in the cloud. You can create different folders to store 
+different types of files, and you can also share your files with your friends and family by giving them access to your cloud storage.
+
+In summary, cloud computing is a way to store and access your important files and programs from a big building (data center) through the internet. It's like having a big 
+closet for your toys and games, but for your digital things!
