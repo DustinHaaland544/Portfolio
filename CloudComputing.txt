@@ -14,6 +14,7 @@ different types of files, and you can also share your files with your friends an
 In summary, cloud computing is a way to store and access your important files and programs from a big building (data center) through the internet. It's like having a 
 big closet for your toys and games, but for your digital things!
 
+
 Cloud computing refers to the use of remote servers (located in data centers around the world) to store, manage, and process data over the internet. Instead of relying
 on local hardware and software resources, cloud computing allows users to access the computing resources they need on demand, without having to invest in their own
 infrastructure.
