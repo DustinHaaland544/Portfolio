@@ -51,3 +51,29 @@ documentation, to help users learn how to use the platform and troubleshoot issu
 
 Overall, WordPress is a powerful and flexible platform that is easy to use and customize, making it an excellent choice for creating and managing websites of all 
 types and sizes.
+
+WordPress is a popular content management system (CMS) that allows people to create and manage websites without having to learn coding. Here is everything I know about
+WordPress in simple terms:
+
+Who created it?
+WordPress was created by Matt Mullenweg and Mike Little in 2003. It was built upon an existing blogging platform called b2/cafelog.
+
+Why it was created?
+The original goal of WordPress was to create a user-friendly platform for bloggers to publish and manage their content online.
+
+Where it was created?
+WordPress was created in Houston, Texas, but it is now a global project with contributors from all over the world.
+
+How has it developed over the years since its creation?
+Since its creation, WordPress has evolved from a simple blogging platform into a full-featured CMS that can be used to build any kind of website. It has added
+thousands of plugins and themes that allow users to customize their sites in endless ways. In addition, WordPress has improved its security, performance, and usability
+over the years.
+
+How its popularity have changed since its creation?
+WordPress has become increasingly popular over the years. As of 2021, WordPress powers over 40% of all websites on the internet. Its popularity is due in part to its
+ease of use, flexibility, and the large community of developers and users who contribute to its development.
+
+At what stage is it at right now?
+WordPress is currently in version 5.9, which was released in December 2021. The latest version includes improvements to the block editor, new features for developers,
+and security enhancements. WordPress is also working on a major release called Gutenberg, which will introduce a new block-based editor that will change the way users
+create content in WordPress.
