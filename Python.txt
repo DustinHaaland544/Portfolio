@@ -9,3 +9,7 @@ Python Data Camp: https://campus.datacamp.com/courses/intro-to-python-for-data-s
 Full Course: https://youtu.be/XKHEtdqhLK8 
 
 ChatGPT: https://youtu.be/0mSf_2RoWfM
+
+SimpliLearn [2022]: www.youtube.com/live/kWEbNBXc2-Y?feature=share
+
+SimpliLearn [2023]: https://youtu.be/ITSMDeOgXxw
