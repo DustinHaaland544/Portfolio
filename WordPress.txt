@@ -77,3 +77,30 @@ At what stage is it at right now?
 WordPress is currently in version 5.9, which was released in December 2021. The latest version includes improvements to the block editor, new features for developers,
 and security enhancements. WordPress is also working on a major release called Gutenberg, which will introduce a new block-based editor that will change the way users
 create content in WordPress.
+
+
+Sure, here are some sources you can use to learn WordPress as a beginner and then progress to an expert level:
+
+WordPress Codex: The official WordPress documentation is a great place to start. It covers everything from the basics of installing and setting up WordPress to more
+advanced topics such as plugin development and theme customization. You can find it at https://codex.wordpress.org/.
+
+WordPress.org: The WordPress.org website has a wealth of resources for beginners and experts alike. You can find tutorials, guides, and videos on topics ranging from
+basic site building to advanced plugin development. You can visit it at https://wordpress.org/support/.
+
+WPBeginner: WPBeginner is a popular WordPress resource that offers tutorials, guides, and articles on all aspects of WordPress. It's a great resource for beginners and
+experts alike. You can visit it at https://www.wpbeginner.com/.
+
+Udemy: Udemy offers a wide range of WordPress courses, from beginner to advanced. Courses are taught by experts in the field and include both video lessons and hands-
+on exercises. You can find courses on Udemy at https://www.udemy.com/courses/search/?q=wordpress.
+
+Lynda.com: Lynda.com is an online learning platform that offers courses on a wide range of topics, including WordPress. Their WordPress courses cover everything from
+basic site building to advanced plugin development. You can find WordPress courses on Lynda.com at https://www.lynda.com/WordPress-training-tutorials/330-0.html.
+
+Smashing Magazine: Smashing Magazine is a popular web development resource that covers a wide range of topics, including WordPress. They offer articles, tutorials, and
+guides on WordPress development and design. You can visit their WordPress section at https://www.smashingmagazine.com/category/wordpress/.
+
+Codecademy: Codecademy is an online learning platform that offers courses on web development topics, including WordPress development. Their WordPress courses cover
+everything from basic site building to advanced plugin development. You can find WordPress courses on Codecademy at https://www.codecademy.com/learn/learn-wordpress.
+
+These are just a few sources to start with, but there are many more out there. The key is to find the resources that work best for you and your learning style, and to
+practice regularly to become an expert in WordPress.
