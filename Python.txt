@@ -16,4 +16,4 @@ SimpliLearn [2023]: https://youtu.be/ITSMDeOgXxw
 
 CodeAcademy: www.codecademy.com/catalog/language/python
 
-Python: www.udemy.com/courses/search/?src=ukw&q=Python
+Udemy: www.udemy.com/courses/search/?src=ukw&q=Python
