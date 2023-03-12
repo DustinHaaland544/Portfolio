@@ -88,19 +88,19 @@ WordPress.org: The WordPress.org website has a wealth of resources for beginners
 basic site building to advanced plugin development. You can visit it at https://wordpress.org/support 
 
 WPBeginner: WPBeginner is a popular WordPress resource that offers tutorials, guides, and articles on all aspects of WordPress. It's a great resource for beginners and
-experts alike. You can visit it at https://www.wpbeginner.com
+experts alike. You can visit it at www.wpbeginner.com
 
 Udemy: Udemy offers a wide range of WordPress courses, from beginner to advanced. Courses are taught by experts in the field and include both video lessons and hands-
-on exercises. You can find courses on Udemy at https://www.udemy.com/courses/search/?q=wordpress
+on exercises. You can find courses on Udemy at www.udemy.com/courses/search/?q=wordpress
 
 Lynda.com: Lynda.com is an online learning platform that offers courses on a wide range of topics, including WordPress. Their WordPress courses cover everything from
-basic site building to advanced plugin development. You can find WordPress courses on Lynda.com at https://www.lynda.com/WordPress-training-tutorials/330-0.html
+basic site building to advanced plugin development. You can find WordPress courses on Lynda.com at www.lynda.com/WordPress-training-tutorials/330-0.html
 
 Smashing Magazine: Smashing Magazine is a popular web development resource that covers a wide range of topics, including WordPress. They offer articles, tutorials, and
-guides on WordPress development and design. You can visit their WordPress section at https://www.smashingmagazine.com/category/wordpress
+guides on WordPress development and design. You can visit their WordPress section at www.smashingmagazine.com/category/wordpress
 
 Codecademy: Codecademy is an online learning platform that offers courses on web development topics, including WordPress development. Their WordPress courses cover
-everything from basic site building to advanced plugin development. You can find WordPress courses on Codecademy at https://www.codecademy.com/learn/learn-wordpress
+everything from basic site building to advanced plugin development. You can find WordPress courses on Codecademy at www.codecademy.com/learn/learn-wordpress
 
 These are just a few sources to start with, but there are many more out there. The key is to find the resources that work best for you and your learning style, and to
 practice regularly to become an expert in WordPress.
