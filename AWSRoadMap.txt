@@ -1,0 +1,28 @@
+Sure, here's a roadmap that you can follow to become an AWS Cloud expert by earning the appropriate certifications:
+
+AWS Certified Cloud Practitioner: This is the entry-level certification that covers the basics of AWS cloud services and infrastructure. 
+It is recommended to start with this certification before moving on to other certifications.
+
+AWS Certified Solutions Architect - Associate: This certification focuses on designing and deploying scalable, highly available, and fault-tolerant systems on AWS. 
+It covers various AWS services, security, and best practices.
+
+AWS Certified Developer - Associate: This certification is intended for developers who want to design, develop, and deploy applications on AWS. It covers AWS services and
+tools related to application development.
+
+AWS Certified SysOps Administrator - Associate: This certification is for administrators who want to manage and operate applications on AWS. It covers deployment, 
+management, and troubleshooting of AWS applications.
+
+AWS Certified Solutions Architect - Professional: This certification is for experienced Solutions Architects who design and deploy complex AWS applications. It covers 
+advanced AWS services and architectures.
+
+AWS Certified DevOps Engineer - Professional: This certification is for experienced DevOps engineers who automate the deployment and management of applications on AWS. 
+It covers AWS services and tools related to DevOps practices.
+
+AWS Certified Security - Specialty: This certification is for security professionals who want to design and implement secure AWS architectures. It covers AWS security 
+services and best practices.
+
+AWS Certified Advanced Networking - Specialty: This certification is for network professionals who want to design and implement AWS networking architectures. It covers 
+advanced AWS networking services and best practices.
+
+It's important to note that some certifications require prerequisites, so it's recommended to check the AWS certification website before pursuing a certification. 
+Good luck on your journey to becoming an AWS Cloud expert!
