@@ -4,8 +4,8 @@ In Gmail, perform a search for emails from the desired sender by entering the em
 
 Gmail will display the search results with emails from the specified sender.
 
-Select the emails you want to apply the filter to by clicking the checkboxes next to each email or using the select-all checkbox at the top left corner to select all 
-emails on the current page.
+Select the emails you want to apply the filter to by clicking the checkboxes next to each email or using the select-all checkbox at the top left corner to  
+select all emails on the current page.
 
 Once you have selected the emails, click on the "More" button (three vertical dots) located above the email list.
 
@@ -21,5 +21,5 @@ Ensure the box next to "Also apply filter to matching conversations" is checked.
 
 Click on the "Create filter" button to save the filter.
 
-By checking the "Skip the Inbox (Archive it)" option, Gmail will apply the filter to the selected emails, move them out of the inbox, and archive them directly. 
-Subsequently, any new emails from the sender will also be filtered and skip the inbox according to the settings you have configured.
+By checking the "Skip the Inbox (Archive it)" option, Gmail will apply the filter to the selected emails, move them out of the inbox, and archive  
+them directly. Subsequently, any new emails from the sender will also be filtered and skip the inbox according to the settings you have configured.
