@@ -1,0 +1,25 @@
+Apologies for the oversight. To apply the filter to existing emails from a specific sender and skip the inbox, please follow these steps:
+
+In Gmail, perform a search for emails from the desired sender by entering the email address or name in the search bar at the top and pressing Enter.
+
+Gmail will display the search results with emails from the specified sender.
+
+Select the emails you want to apply the filter to by clicking the checkboxes next to each email or using the select-all checkbox at the top left corner to select all 
+emails on the current page.
+
+Once you have selected the emails, click on the "More" button (three vertical dots) located above the email list.
+
+In the dropdown menu, choose "Filter messages like these."
+
+Gmail will open the filter creation window with the sender's email address or name pre-filled in the "From" field.
+
+Review and modify the filter settings if necessary, such as applying a label or other actions.
+
+Check the box next to "Skip the Inbox (Archive it)" option.
+
+Ensure the box next to "Also apply filter to matching conversations" is checked.
+
+Click on the "Create filter" button to save the filter.
+
+By checking the "Skip the Inbox (Archive it)" option, Gmail will apply the filter to the selected emails, move them out of the inbox, and archive them directly. 
+Subsequently, any new emails from the sender will also be filtered and skip the inbox according to the settings you have configured.
