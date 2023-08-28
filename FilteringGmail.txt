@@ -1,0 +1,34 @@
+Creating a label in Gmail and setting up filters to automatically send emails from a particular sender to that label is a great way to organize your inbox. Here's a step-by-step guide on how to do this:
+
+Login to Gmail:
+Open your Gmail account by visiting the Gmail website (https://mail.google.com/) and logging in with your credentials.
+
+Create a Label:
+In the left-hand sidebar, you'll see a list of labels. Scroll down to the bottom and click on "More" to expand the label list. Then, click on "Create new label." Give your label a meaningful name, such 
+as the name of the sender you want to filter.
+
+Set Up a Filter:
+Now, you need to create a filter that will automatically apply your newly created label to emails from the specific sender. Here's how:
+
+a. Click on the gear icon in the top-right corner of the Gmail interface.
+b. Select "See all settings."
+c. Navigate to the "Filters and Blocked Addresses" tab.
+d. Click on "Create a new filter."
+
+Define Filter Criteria:
+In the "From" field, enter the email address of the sender from whom you want to receive emails to this label.
+
+Create Filter:
+Click on the "Create filter" button at the bottom right of the window.
+
+Apply Label:
+In the next window, check the box next to "Apply the label" and then select the label you created earlier from the drop-down list.
+
+Save Filter:
+Click on the "Create filter" button to save the filter. Gmail will apply this filter to existing and incoming emails that match the specified criteria.
+
+From now on, emails from the specific sender will be automatically labeled and sorted under the label you created, bypassing your main inbox. You can access this label from the left-hand sidebar
+whenever you want to view emails from that sender.
+
+Remember that Gmail's interface might change over time, so the steps provided above are based on the interface as of my last update in September 2021. If there are any changes to Gmail's interface,
+the general concept of creating labels and filters should still apply, but the exact steps might differ slightly.
