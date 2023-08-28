@@ -4,8 +4,7 @@ Login to Gmail:
 Open your Gmail account by visiting the Gmail website (https://mail.google.com/) and logging in with your credentials.
 
 Create a Label:
-In the left-hand sidebar, you'll see a list of labels. Scroll down to the bottom and click on "More" to expand the label list. Then, click on "Create new label." Give your label a meaningful name, such 
-as the name of the sender you want to filter.
+In the left-hand sidebar, you'll see a list of labels. Scroll down to the bottom and click on "More" to expand the label list. Then, click on "Create new label." Give your label a meaningful name, such as the name of the sender you want to filter.
 
 Set Up a Filter:
 Now, you need to create a filter that will automatically apply your newly created label to emails from the specific sender. Here's how:
@@ -27,8 +26,6 @@ In the next window, check the box next to "Apply the label" and then select the 
 Save Filter:
 Click on the "Create filter" button to save the filter. Gmail will apply this filter to existing and incoming emails that match the specified criteria.
 
-From now on, emails from the specific sender will be automatically labeled and sorted under the label you created, bypassing your main inbox. You can access this label from the left-hand sidebar
-whenever you want to view emails from that sender.
+From now on, emails from the specific sender will be automatically labeled and sorted under the label you created, bypassing your main inbox. You can access this label from the left-hand sidebar whenever you want to view emails from that sender.
 
-Remember that Gmail's interface might change over time, so the steps provided above are based on the interface as of my last update in September 2021. If there are any changes to Gmail's interface,
-the general concept of creating labels and filters should still apply, but the exact steps might differ slightly.
+Remember that Gmail's interface might change over time, so the steps provided above are based on the interface as of my last update in September 2021. If there are any changes to Gmail's interface, the general concept of creating labels and filters should still apply, but the exact steps might differ slightly.
