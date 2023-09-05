@@ -25,7 +25,7 @@ Click on the "Create filter" button at the bottom right of the window.
 
 Apply Label:
 In the next window, check the box of "Skip Inbox (Archive it)", check the box of "Apply the label", select the label you created 
-earlier from the drop-down list and check the box of "Also apply filter to matching conversation". 
+earlier from the drop-down list and check the box of "Also apply filter to matching conversations". 
 
 Save Filter:
 Click on the "Create filter" button to save the filter. Gmail will apply this filter to existing and incoming emails that match
