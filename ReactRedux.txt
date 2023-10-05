@@ -17,7 +17,6 @@ I hope this helps to clarify the relationship between React and Redux! Let me kn
 
 Sure! Here is an example of a simple program that illustrates the relationship between React and Redux in a web application:
 
-Copy code
 import React from 'react';
 import { connect } from 'react-redux';
 
