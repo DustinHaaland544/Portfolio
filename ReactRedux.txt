@@ -11,11 +11,11 @@ The relationship between React and Redux is that React is often used to render t
 application's state. This allows the application to respond to user actions and network events, and to update the UI in a consistent and efficient manner.
 
 React and Redux are not directly tied to each other, and it is possible to use either library independently of the other. However, they are frequently used 
-together because they complement each other well and can make it easier to build complex, modern web applications.
+together because they complement each other well and can make it easier to build complex and modern web applications.
 
 I hope this helps to clarify the relationship between React and Redux! Let me know if you have any questions.
 
-Sure! Here is an example of a simple program that illustrates the relationship between React and Redux in a web application:
+Here is an example of a simple program that illustrates the relationship between React and Redux in a web application:
 
 import React from 'react';
 import { connect } from 'react-redux';
