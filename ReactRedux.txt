@@ -35,11 +35,11 @@ const mapStateToProps = state => {
 // Connect the component to the Redux store
 export default connect(mapStateToProps)(Counter);
 
-In this example, we have a Counter component that displays the current count from the Redux store. The component is connected to the store using the connect() 
-function from the react-redux library.
+In this example, we have a Counter react component that displays the current count from the Redux store. The component is connected to the redux store using the 
+connect() function from the react-redux library.
 
-The connect() function takes a function called mapStateToProps as an argument, which specifies how the state of the store should be mapped to the props of the 
-component. In this case, we are mapping the count value from the store to the count prop of the Counter component.
+The connect() function takes a function called mapStateToProps as an argument, which specifies how the state of the redux store should be mapped to the props of 
+the react component. In this case, we are mapping the count value from the store to the count prop of the Counter component.
 
 When the state of the store changes, the Counter component will be re-rendered with the updated count value. This allows the component to efficiently update 
 the UI in response to changes in the application's state.
