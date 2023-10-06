@@ -61,7 +61,7 @@ const todosReducer = (state = [], action) => {
 
 
 Provider Component: In a React application, Redux is typically integrated using the <Provider> component from the react-redux library. This component wraps your 
-entire app and provides access to the Redux store to all components within.
+entire React app and provides access to the Redux store to all components within.
 
 Example:
 
