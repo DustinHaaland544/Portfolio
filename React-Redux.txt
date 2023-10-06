@@ -10,7 +10,6 @@ directly modify it. Instead, you update the state by dispatching actions.
 Actions: Actions are plain JavaScript objects that describe an event or intent to change the state. They contain a type field indicating the type of action and 
 may include additional data (payload) relevant to that action. Actions are dispatched to the store.
 
-
 Example:
 
 // Action to add a todo item
@@ -41,7 +40,6 @@ const addTodo = (text) => ({
 
 Reducers: Reducers are pure functions that specify how the state should change in response to an action. They take the current state and an action as arguments 
 and return a new state. Reducers should never modify the existing state; instead, they create a new state object.
-
 
 Example:
 
