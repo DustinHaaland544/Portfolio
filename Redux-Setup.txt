@@ -60,3 +60,44 @@ const reducer = (
 };
 
 export default reducer;
+
+
+action-creators/index.ts
+
+import axios from "axios";
+import { Dispatch } from "redux";
+import { ActionType } from "../action-types";
+import { Action } from "../actions";
+
+export const searchRepositories = (term: string) => {
+    return async (dispatch: Dispatch<Action>) => {                       // Manually "dispatching" action to the redux store to search repositories
+        dispatch({
+            type: ActionType.SEARCH_REPOSITORIES
+        });
+
+        try {
+            const { data } = await axios.get("https://registry.npmjs.org/-/v1/search", {    // Making the search request to the API
+                params: {
+                    text: term
+                }
+            });
+
+            const names = data.objects.map((result: any) => {           // Mapping through the data got back in response
+                return result.package.name;
+            });
+
+            dispatch({                                                  // Dispatching the success action after finding the repository
+                type: ActionType.SEARCH_REPOSITORIES_SUCCESS,
+                payload: names                                          // Sending the name of the repository found with the dispatch as payload
+            })
+
+        } catch (err) {                                                 // Dispatching the error action if the repository searched for is not found
+            if(err instanceof Error) {
+                dispatch({
+                    type: ActionType.SEARCH_REPOSITORIES_ERROR,
+                    payload: err.message,                               // Sending the error message with the dispatch as payload
+                })
+            }
+        }
+    };
+};
