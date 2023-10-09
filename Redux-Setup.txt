@@ -101,3 +101,107 @@ export const searchRepositories = (term: string) => {
         }
     };
 };
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+action-creators/index.ts
+
+import axios from "axios";
+import { Dispatch } from "redux";
+import { ActionType } from "../action-types";
+import { Action } from "../actions";
+
+export const searchRepositories = (term: string) => {
+    return async (dispatch: Dispatch<Action>) => {                       // Manually "dispatching" action to the redux store to search repositories
+        dispatch({
+            type: ActionType.SEARCH_REPOSITORIES
+        });
+
+        try {
+            const { data } = await axios.get("https://registry.npmjs.org/-/v1/search", {    // Making the search request to the API
+                params: {
+                    text: term
+                }
+            });
+
+            const names = data.objects.map((result: any) => {           // Mapping through the data got back in response
+                return result.package.name;
+            });
+
+            dispatch({                                                  // Dispatching the success action after finding the repository
+                type: ActionType.SEARCH_REPOSITORIES_SUCCESS,
+                payload: names                                          // Sending the name of the repository found with the dispatch as payload
+            })
+
+        } catch (err) {                                                 // Dispatching the error action if the repository searched for is not found
+            if(err instanceof Error) {
+                dispatch({
+                    type: ActionType.SEARCH_REPOSITORIES_ERROR,
+                    payload: err.message,                               // Sending the error message with the dispatch as payload
+                })
+            }
+        }
+    };
+};
+
+
+store.ts
+
+import { configureStore } from "@reduxjs/toolkit";
+import thunk from "redux-thunk";
+import reducers from "./reducers";
+
+const middleware = [thunk];
+
+export const store = configureStore({
+  reducer: reducers,
+  // Pass the middleware array directly
+  middleware,
+  // Other store configuration options can be added here
+});
+
+RepositoriesList.ts
+
+import { useState } from "react";
+
+const RepositoriesList: React.FC = () => {
+
+    const [term, setTerm] = useState("");
+
+    const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+
+        event.preventDefault();
+    }
+    
+    return <div>
+        <form onSubmit={onSubmit}>
+            <input />
+            <button>
+                Search
+            </button>
+        </form>
+    </div>
+};
+
+export default RepositoriesList;
+
+App.tsx
+
+import { Provider } from "react-redux";
+import { store } from "../state";
+import RepositoriesList from "./RepositoriesList";
+
+const App = () => {
+  return (
+    <Provider store={store}>
+      <div>
+        <h1>
+            Search For a Package
+        </h1>
+        <RepositoriesList />
+      </div>
+    </Provider>
+  );
+};
+
+export default App; 
