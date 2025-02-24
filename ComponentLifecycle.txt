@@ -1,0 +1,195 @@
+Understanding React Component Lifecycle (With Examples)
+
+In React, components go through different stages in their lifetime, from creation to updating and finally unmounting. React provides special lifecycle 
+methods (for class components) and React hooks (for functional components) to control what happens at each stage.
+
+3 Phases of the React Component Lifecycle:
+- Mounting (Component Creation & Insertion into DOM)
+- Updating (When Component Re-renders Due to State or Props Change)
+- Unmounting (Component Removal from DOM)
+
+1. Mounting Phase (When Component is Created & Inserted into the DOM)
+This is when a component first appears on the screen. It happens when a user visits the page or a new component is rendered inside another component.
+
+Lifecycle Methods (Class Components)
+- constructor() → Initializes state and binds event handlers.
+- static getDerivedStateFromProps() → Updates state based on props before rendering.
+- render() → Returns JSX (UI of the component).
+- componentDidMount() → Runs after the component is inserted into the DOM (Good for API calls).
+
+Example (Class Component):
+
+import React, { Component } from "react";
+
+class MountingExample extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { message: "Component is being mounted!" };
+    console.log("Constructor Called");
+  }
+
+  componentDidMount() {
+    console.log("Component Mounted! Now making API call...");
+    setTimeout(() => {
+      this.setState({ message: "Data loaded!" });
+    }, 2000);
+  }
+
+  render() {
+    console.log("Render Called");
+    return <h2>{this.state.message}</h2>;
+  }
+}
+
+export default MountingExample;
+
+Functional Component Alternative (Using useEffect):
+
+import React, { useState, useEffect } from "react";
+
+const MountingExample = () => {
+  const [message, setMessage] = useState("Component is being mounted!");
+
+  useEffect(() => {
+    console.log("Component Mounted! Now making API call...");
+    setTimeout(() => {
+      setMessage("Data loaded!");
+    }, 2000);
+  }, []); // Empty dependency array means this runs once when mounted
+
+  return <h2>{message}</h2>;
+};
+
+export default MountingExample;
+
+Key Takeaways:
+- componentDidMount() (class) and useEffect(() => {}, []) (function) are used for API calls & side effects after the component is first rendered.
+
+2. Updating Phase (When Component Re-renders Due to State or Props Change)
+
+This happens when:
+- The state changes (e.g., user clicks a button).
+- The props change (e.g., parent component updates a child’s data).
+
+Lifecycle Methods (Class Components)
+- static getDerivedStateFromProps() → Updates state based on new props.
+- shouldComponentUpdate() → Controls whether the component should re-render (optimization).
+- render() → Re-renders the component.
+- getSnapshotBeforeUpdate() → Captures data before DOM update.
+- componentDidUpdate() → Runs after component updates (Good for API calls after state changes).
+
+Example (Class Component):
+
+import React, { Component } from "react";
+
+class UpdatingExample extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log("Should Component Update?", nextState.count);
+    return nextState.count <= 5; // Prevent re-render if count > 5
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log("Component Updated! Previous count:", prevState.count);
+  }
+
+  incrementCount = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
+
+  render() {
+    console.log("Render Called");
+    return (
+      <div>
+        <h2>Count: {this.state.count}</h2>
+        <button onClick={this.incrementCount}>Increment</button>
+      </div>
+    );
+  }
+}
+
+export default UpdatingExample;
+
+Functional Component Alternative (Using useEffect):
+
+import React, { useState, useEffect } from "react";
+
+const UpdatingExample = () => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log("Component Updated! Current count:", count);
+  }, [count]); // Runs when `count` changes
+
+  return (
+    <div>
+      <h2>Count: {count}</h2>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+};
+
+export default UpdatingExample;
+
+Key Takeaways:
+- componentDidUpdate() (class) and useEffect(() => {}, [dependency]) (function) handle side effects after state changes.
+
+3. Unmounting Phase (When Component is Removed from the DOM)
+
+This happens when:
+- The user navigates away from the component.
+- The parent component removes the child component.
+
+Lifecycle Method (Class Component):
+- componentWillUnmount() → Cleans up event listeners, timers, or API requests before the component is removed.
+
+Example (Class Component):
+
+import React, { Component } from "react";
+
+class UnmountingExample extends Component {
+  componentWillUnmount() {
+    console.log("Component is unmounting! Cleaning up...");
+  }
+
+  render() {
+    return <h2>Component will unmount when removed!</h2>;
+  }
+}
+
+export default UnmountingExample;
+
+Functional Component Alternative (Using useEffect Cleanup)
+
+import React, { useState, useEffect } from "react";
+
+const UnmountingExample = () => {
+  useEffect(() => {
+    console.log("Component Mounted!");
+
+    return () => {
+      console.log("Component is unmounting! Cleaning up...");
+    };
+  }, []); // Cleanup runs when component unmounts
+
+  return <h2>Component will unmount when removed!</h2>;
+};
+
+export default UnmountingExample;
+
+Key Takeaways:
+- Use componentWillUnmount() (class) or return () => {} inside useEffect() (function) to clean up timers, event listeners, or subscriptions.
+
+Final Summary Table
+Phase	                                      Class Components	                                                        Functional Components
+Mounting	                                  constructor(), componentDidMount()	                                      useEffect(() => {}, [])
+Updating	                                  shouldComponentUpdate(), componentDidUpdate()	                            useEffect(() => {}, [dependency])
+Unmounting	                                componentWillUnmount()	                                                  useEffect(() => { return () => {} }, [])
+
+Which One Should You Use?
+- For new React apps → Use Functional Components + Hooks (useEffect()).
+- For older class-based apps → Know lifecycle methods for maintenance.
