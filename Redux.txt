@@ -52,7 +52,6 @@ Step 2: Create a Redux Store
 The store holds the global state of the application.
 
 store.js
-
 import { createStore } from 'redux';
 import counterReducer from './counterReducer';
 
@@ -69,7 +68,6 @@ Step 3: Define Actions
 Actions describe what should happen (e.g., "increment counter", "decrement counter").
 
 actions.js
-
 export const increment = () => {
     return { type: "INCREMENT" };
 };
@@ -85,7 +83,6 @@ Step 4: Create a Reducer
 A reducer updates the state based on the action type.
 
 counterReducer.js
-
 const initialState = { count: 0 };
 
 const counterReducer = (state = initialState, action) => {
@@ -107,7 +104,6 @@ Step 5: Provide the Redux Store to React
 Use the Provider component to make Redux available to all components.
 
 index.js
-
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
@@ -131,26 +127,6 @@ Now, let's create a Counter component that:
 - Dispatches actions to modify state.
 
 Counter.js
-
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { increment, decrement } from "./actions";
-
-const Counter = () => {
-    const count = useSelector((state) => state.count);  // Get state from Redux
-    const dispatch = useDispatch();  // Get dispatch function
-
-    return (
-        <div>
-            <h2>Counter: {count}</h2>
-            <button onClick={() => dispatch(increment())}>+</button>
-            <button onClick={() => dispatch(decrement())}>-</button>
-        </div>
-    );
-};
-
-export default Counter;
-
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement } from "./actions";
@@ -177,7 +153,6 @@ Step 7: Use the Counter Component
 Finally, use the Counter component inside App.js.
 
 App.js
-
 import React from "react";
 import Counter from "./Counter";
 
