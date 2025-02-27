@@ -4,6 +4,8 @@ https://youtu.be/qhll3DXuLHI?si=sNFtFCh50gMKZ0JP [Bangla Tutorial]
 
 https://youtu.be/5yEG6GhoJBs?si=xzi5GDLZdNXJHKRz [Fast Tutorial]
 
+https://youtu.be/1i04-A7kfFI?si=n96VN3lLJQdzcoke [Redux Toolkit] 
+
 www.geeksforgeeks.org/whats-the-typical-flow-of-data-like-in-a-react-with-redux-app [Good] 
 
 www.dhiwise.com/post/understanding-the-react-redux-flow-chart [Clean] 
