@@ -4,6 +4,8 @@ https://youtu.be/qhll3DXuLHI?si=sNFtFCh50gMKZ0JP [Bangla Tutorial]
 
 https://youtu.be/5yEG6GhoJBs?si=xzi5GDLZdNXJHKRz [Fast Tutorial]
 
+www.geeksforgeeks.org/whats-the-typical-flow-of-data-like-in-a-react-with-redux-app
+
 
 What is Redux?
 
