@@ -1,0 +1,197 @@
+The Pareto Principle (80/20 Rule) suggests that 20% of the concepts in Redux will give you 80% of the value. 
+
+Based on this, let's break down Redux learning into two phases:
+
+The 20% Core Concepts (High Impact - Quick Mastery)
+
+These are essential to start using Redux effectively.
+
+The 80% Advanced Topics (Deepening Knowledge)
+
+These help you optimize Redux usage but are not critical to start.
+
+Phase 1: The 20% That Covers 80% of Redux
+
+Goal: Learn Redux fast and start using it in a project.
+
+Step 1: Understand the Core Redux Principles (1-2 hours)
+
+What is Redux? → A state management library.
+
+When to use it? → Best for managing complex global states.
+
+Core Principles:
+
+1. Single Source of Truth: One central store for state.
+
+2. State is Read-Only: Use actions to update state.
+
+3. Changes are Made with Pure Functions: Reducers modify state.
+
+Resource: Redux Official Docs - Core Principles:  
+
+https://medium.com/@farihatulmaria/explaining-the-three-core-principles-of-redux-463adb309758
+
+https://redux.js.org/understanding/thinking-in-redux/three-principles
+
+Step 2: Master the Redux Flow (Minimal Boilerplate Example) (3-4 hours)
+
+Store: Central place to hold state.
+
+Actions: Objects that describe state changes.
+
+Reducers: Pure functions that modify state based on actions.
+
+Dispatch: Sends actions to the store.
+
+Selectors: Retrieve specific state from the store.
+
+Code Example (Vanilla Redux, No React):
+
+import { createStore } from 'redux';
+
+// Action
+const INCREMENT = "INCREMENT";
+const increment = () => ({ type: INCREMENT });
+
+// Reducer
+const counterReducer = (state = { count: 0 }, action) => {
+  switch (action.type) {
+    case INCREMENT:
+      return { count: state.count + 1 };
+    default:
+      return state;
+  }
+};
+
+// Store
+const store = createStore(counterReducer);
+
+store.subscribe(() => console.log(store.getState()));
+
+store.dispatch(increment()); // { count: 1 }
+
+Key Takeaways:
+
+The store holds the state.
+
+Actions describe changes.
+
+Reducers update the state.
+
+Dispatch triggers actions.
+
+Resource: Redux Core API Docs:
+
+https://redux.js.org/api/api-reference
+
+Step 3: Integrate Redux with React (Redux Toolkit Simplified) (3-5 hours)
+
+Use Redux Toolkit (RTK) instead of manual Redux setup.
+
+1. Install Redux Toolkit:
+
+npm install @reduxjs/toolkit react-redux
+
+2. Create a Slice (Reducer + Actions in One File):
+
+import { createSlice } from "@reduxjs/toolkit";
+
+const counterSlice = createSlice({
+  name: "counter",
+  initialState: { count: 0 },
+  reducers: {
+    increment: (state) => { state.count += 1; },
+  },
+});
+
+export const { increment } = counterSlice.actions;
+export default counterSlice.reducer;
+
+3. Configure Store:
+
+import { configureStore } from "@reduxjs/toolkit";
+import counterReducer from "./counterSlice";
+
+export const store = configureStore({
+  reducer: { counter: counterReducer },
+});
+
+4. Use Redux in React Components:
+
+import { useSelector, useDispatch } from "react-redux";
+import { increment } from "./counterSlice";
+
+function Counter() {
+  const count = useSelector((state) => state.counter.count);
+  const dispatch = useDispatch();
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => dispatch(increment())}>Increment</button>
+    </div>
+  );
+}
+
+Key Takeaways:
+
+Redux Toolkit reduces boilerplate and simplifies state management.
+
+useSelector() accesses state, useDispatch() triggers actions.
+
+Slices combine actions and reducers.
+
+Resource: Redux Toolkit Quick Start:
+
+https://redux-toolkit.js.org/tutorials/quick-start
+
+Phase 2: The 80% That Makes You a Redux Pro
+
+Goal: Optimize performance, handle async, and use Redux effectively.
+
+Step 4: Learn Redux Async Handling (Redux Thunk vs RTK Query) (4-5 hours)
+
+- Thunk Middleware: Handles async API calls.
+
+- RTK Query (Recommended): Simplifies API data fetching.
+
+Resource: Redux Async Logic:
+
+https://redux.js.org/tutorials/fundamentals/part-6-async-logic
+
+Step 5: Debugging & Performance Optimization (2-3 hours)
+
+Redux DevTools Extension for debugging.
+
+Use Reselect for optimized state selection.
+
+Normalize state using createEntityAdapter.
+
+Resource: Redux Performance Tips:
+
+https://redux.js.org/faq/performance
+
+https://redux.js.org/tutorials/essentials/part-6-performance-normalization
+
+www.geeksforgeeks.org/how-can-you-optimize-the-performance-of-react-redux-applications
+
+Summary: The 80/20 Learning Plan
+
+1. Phase: 20% Core Redux Concepts
+
+Learning Area: 
+
+Understanding Redux Principles: 1-2 Hours
+
+Redux Flow (Vanilla Example): 3-4 Hours
+
+Redux with React (Redux Toolkit): 3-5 Hours
+
+2. Phase: 80% Advanced Concepts
+
+Learning Area:
+
+Async Handling (Thunk/RTK Query): 4-5 Hours
+
+Debugging & Performance Optimization: 2-3 Hours
