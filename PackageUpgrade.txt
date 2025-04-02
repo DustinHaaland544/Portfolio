@@ -1,0 +1,4 @@
+rm -rf node_modules package-lock.json  # Remove old dependencies
+npm install -g npm-check-updates       # Install npm-check-updates tool
+npx npm-check-updates -u               # Upgrade package.json to latest versions
+npm install                            # Install the latest dependencies
