@@ -2,3 +2,12 @@ rm -rf node_modules package-lock.json  # Remove old dependencies, run this comma
 npm install -g npm-check-updates       # Install npm-check-updates tool
 npx npm-check-updates -u               # Upgrade package.json to latest versions
 npm install                            # Install the latest dependencies
+
+After upgrading, run:
+npm outdated
+
+This will show if there are any outdated packages still remaining.
+
+You can also check installed versions with:
+
+npm list --depth=0
