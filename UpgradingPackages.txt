@@ -4,6 +4,7 @@ npx npm-check-updates -u               # Upgrade package.json to latest versions
 npm install                            # Install the latest dependencies
 
 After upgrading, run:
+
 npm outdated
 
 This will show if there are any outdated packages still remaining.
