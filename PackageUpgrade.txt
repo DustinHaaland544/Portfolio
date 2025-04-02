@@ -1,4 +1,4 @@
-rm -rf node_modules package-lock.json  # Remove old dependencies
+rm -rf node_modules package-lock.json  # Remove old dependencies, run this command in Git Bash instead of VS Code terminal
 npm install -g npm-check-updates       # Install npm-check-updates tool
 npx npm-check-updates -u               # Upgrade package.json to latest versions
 npm install                            # Install the latest dependencies
