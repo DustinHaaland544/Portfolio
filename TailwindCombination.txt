@@ -1,1 +1,20 @@
 npm install -D tailwindcss@3.4.1 postcss@8 autoprefixer@10
+
+After downloading these modules, manually create these files 
+at the root of the project
+
+tailwind.config.js
+
+/** @type {import('tailwindcss').Config} */
+export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
+export const theme = {
+  extend: {},
+};
+export const plugins = [];
+
+postcss.config.js
+
+export const plugins = {
+  tailwindcss: {},
+  autoprefixer: {},
+};
