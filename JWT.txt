@@ -1,0 +1,158 @@
+https://jwt.io
+
+🔐 What is a JSON Web Token (JWT)?
+
+A JSON Web Token (JWT) is a compact, URL-safe way of securely transmitting information between two parties — usually a client (like a browser or mobile app) and a server.
+
+You can think of a JWT as a digital passport or ID card that:
+
+- Confirms your identity (authentication)
+
+- Grants you permission to access certain things (authorization)
+
+🧱 Structure of a JWT
+
+A JWT is just a string made up of 3 parts, separated by dots (.):
+
+HEADER.PAYLOAD.SIGNATURE
+
+Example:
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+.
+eyJ1c2VybmFtZSI6ImFsaWNlIiwiaWQiOjEyM30
+.
+abc123signaturexyz
+
+Let’s break down each part:
+
+1. 🔖 Header
+
+The header tells what type of token it is and what algorithm is used to sign it.
+
+Example:
+
+{
+  "alg": "HS256",  // algorithm
+  "typ": "JWT"     // token type
+}
+
+2. 🧾 Payload
+
+This is the data or claims being sent. It’s what the token is about.
+
+Example:
+
+{
+  "username": "alice",
+  "id": 123,
+  "role": "admin",
+  "exp": 1715800000  // (optional) expiration time
+}
+
+Note: The payload is Base64 encoded — not encrypted. So it can be read by anyone, but not changed without detection.
+
+3. 🧬 Signature
+This part is like a seal or tamper-proof stamp. It ensures no one has altered the data.
+
+How is it created?
+
+HMACSHA256(
+  base64UrlEncode(header) + "." + base64UrlEncode(payload),
+  secret_key
+)
+
+Only the server knows the secret key, so if someone tries to change the token, the signature won’t match.
+
+
+🧭 What is JWT used for?
+
+
+✅ Authentication
+
+After a user logs in, the server:
+
+- Verifies the credentials
+
+- Creates a JWT
+
+- Sends it back to the client
+
+The client stores the JWT (usually in localStorage or cookies) and sends it with every request to access protected routes.
+
+🛂 Authorization
+
+The server checks:
+
+- Is the JWT valid?
+
+- Does the payload allow access to this resource?
+
+If yes, access is granted. If not, the server returns an error.
+
+📦 Where is the JWT stored?
+
+Usually in the browser:
+
+- localStorage: easy but vulnerable to XSS (cross-site scripting)
+
+- HttpOnly Cookies: safer from XSS, but need CSRF protection
+
+🛠️ How does the flow work?
+
+1. User logs in (e.g., username + password)
+
+2. Server checks credentials → If correct:
+
+- Creates JWT
+
+- Sends JWT back to client
+
+3. Client stores JWT
+
+4. On each request, client sends JWT in HTTP headers:
+
+  Authorization: Bearer <token>
+
+5. Server verifies JWT using secret key
+
+- If valid: returns data
+
+- If invalid/expired: returns error
+
+🚨 Pros & Cons
+✅ Pros:
+
+- Stateless (no session storage on server)
+
+- Scalable for distributed systems (microservices, mobile apps)
+
+- Compact and fast
+
+❌ Cons:
+
+- Tokens can’t be invalidated easily until they expire (unless you manage a blacklist)
+
+- Payload is visible to anyone
+
+- Requires secure storage on client side
+
+🔐 Common Use Case: Secure APIs
+
+APIs use JWTs to protect endpoints like:
+
+GET /profile
+GET /orders
+POST /create-post
+
+Only users with a valid JWT can access them.
+
+✅ Final Summary:
+
+Component	              Purpose
+Header	                Type + algorithm
+Payload	                User data / claims
+Signature	              Ensures token integrity
+Main Use	              Auth (who is this?), Authorization (what can they access?)
+Stored in	              localStorage or cookies
+Sent via	              HTTP headers: Authorization: Bearer <token>
