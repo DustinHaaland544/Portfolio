@@ -1,4 +1,4 @@
-npm install -D tailwindcss@3.4.1 postcss@8 autoprefixer@10
+npm i -D tailwindcss@3.4.1 postcss@8 autoprefixer@10
 
 After downloading these modules, manually create these two  
 files at the root of the project:
