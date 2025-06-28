@@ -1,0 +1,53 @@
+GitHub provides free web hosting for front-end web apps through a service called GitHub Pages. It’s especially useful for hosting static websites, which include HTML, CSS, 
+and JavaScript (like your front-end apps). Here’s how it works:
+
+How to Host a Web App with GitHub Pages
+
+1. Choose or Create a Repository
+
+- You can use an existing repo that contains your front-end code.
+
+- Make sure your app’s entry point is an index.html file.
+
+2. Push Your Code to the main or master Branch
+
+3. Enable GitHub Pages
+
+- Go to your repository on GitHub.
+
+- Click Settings > Pages (usually in the left sidebar).
+
+- Under "Source", select the branch (main or master) and optionally a folder (usually /root or /docs).
+
+- Click Save.
+
+https://your-username.github.io/your-repo-name/
+
+For Single Page Applications (SPAs) with React
+
+If you’re using React (e.g., Create React App), add this to your package.json:
+
+"homepage": "https://your-username.github.io/your-repo-name"
+
+Then run:
+
+npm run build
+
+And push the contents of the build/ folder to a new gh-pages branch, or use the gh-pages package:
+
+npm install --save gh-pages
+
+In package.json scripts:
+
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+
+Then deploy using:
+
+npm run deploy
+
+Bonus: Custom Domain
+
+You can also use a custom domain with GitHub Pages by adding a CNAME file and updating your DNS.
