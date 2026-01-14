@@ -1,18 +1,75 @@
-Tailwind CSS is a popular CSS framework that provides a set of pre-defined CSS classes that you can use to quickly style your HTML elements. It's designed to be highly 
-customizable and can be configured to fit the specific design needs of your project.
+Tailwind CSS is a popular CSS framework that provides a set of pre-defined CSS classes that you can use to quickly style your HTML elements. It's designed to be 
+highly customizable and can be configured to fit the specific design needs of your project.
 
-In simple terms, Tailwind is a tool that helps you write CSS more quickly and efficiently. Instead of writing your own CSS styles, you can use pre-defined classes that 
-Tailwind provides to quickly style your HTML elements. This can save a lot of time and makes it easy to create consistent, professional-looking designs.
+In simple terms, Tailwind is a tool that helps you write CSS more quickly and efficiently. Instead of writing your own CSS styles, you can use pre-defined classes 
+that Tailwind provides to quickly style your HTML elements. This can save a lot of time and makes it easy to create consistent, professional-looking designs.
 
-In great details, Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any 
-annoying opinionated styles you have to fight to override. It's a utility-first CSS framework that makes it easy to style HTML elements using pre-defined classes. 
+In great details, Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs 
+without any annoying opinionated styles you have to fight to override. It's a utility-first CSS framework that makes it easy to style HTML elements using pre-
+defined classes. 
+
 Each class applies a single utility, such as a font size, margin, padding, or color.
 
-Tailwind’s utility classes are generated based on a set of configurable design constraints like spacing, typography, and color. These classes can be used in combination 
-to quickly style elements of a webpage.
+Tailwind’s utility classes are generated based on a set of configurable design constraints like spacing, typography, and color. These classes can be used in 
+combination to quickly style elements of a webpage.
 
 Tailwind also provides a set of pre-defined components, such as buttons, forms, and layout grids, that can be used to quickly create common UI elements. 
 Additionally, you can easily customize the default values of any of the framework's settings to fit the design needs of your project.
 
-Overall, Tailwind CSS is a powerful tool for creating custom designs without writing a lot of CSS. It's widely used in web development and it's easy to learn and use with
-its pre-defined classes and components.
+Overall, Tailwind CSS is a powerful tool for creating custom designs without writing a lot of CSS. It's widely used in web development and it's easy to learn and 
+use with its pre-defined classes and components.
+
+Tailwind V3 Download Instructions:
+
+Uninstalling the old or unstable version: npm uninstall tailwindcss @tailwindcss/cli
+
+Installing the Tailwind V3: npm install -D tailwindcss@3 postcss autoprefixer
+
+Initializing Tailwind: npx tailwindcss init -p
+
+We should see: 
+
+tailwind.config.js
+postcss.config.js
+
+We need to put this code inside tailwind.cofig.js
+
+module.exports = {
+  content: ["./src/**/*.{js,jsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+update the indes.css (src/index.css) as this:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Restart the dev server: npm start
+
+Update App.hs temprarily by writing this code:
+
+function App() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-900">
+      <h1 className="text-4xl font-bold text-green-400">
+        Tailwind Is Working 🚀
+      </h1>
+    </div>
+  );
+}
+
+export default App;
+
+Then we need to commit this setup: 
+
+git add .
+git commit -m "Configured Tailwind CSS"
+git push
+
+Then we need to check if our browser is showing this message: Tailwind Is Working 🚀
+
+If it does then Tailwind V3 has been successfully implemented in our project
