@@ -42,7 +42,7 @@ module.exports = {
   plugins: [],
 };
 
-update the indes.css (src/index.css) as this:
+update the index.css (src/index.css) as this:
 
 @tailwind base;
 @tailwind components;
